@@ -1,0 +1,24 @@
+.works__title,
+.team__title,
+.clients__title {
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.section .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.title--dark-color {
+    color: var(--title-text-color);
+}
+.title--light-color {
+    color: var(--white-color);
+}

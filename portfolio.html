@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+
+  <body class="body">
+    <!---------------------------------------шапка профиля-->
+    <header class="header">
+            <div class="container header-container">
+                <nav class="main-nav">
+                    <a href="./index.html" class="logo title--dark-color"
+                        ><span class="accent">Web</span>Studio</a
+                    >
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link site-nav__link-current">
+                                Портфолио</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="auth-nav list">
+                    <li class="auth-nav__item">
+                        <a href="mailto:info@devstudio.com" class="auth-nav__mail">
+                            <svg class="auth-nav__icon" width="16" height="12">
+                                <use
+                                    href="./images-studio/icons.svg#icon-mail"
+                                ></use></svg
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="auth-nav__item">
+                        <a href="tel:+380961111111" class="auth-nav__phone"
+                            ><svg class="auth-nav__icon" width="10" height="16">
+                                <use
+                                    href="./images-studio/icons.svg#icon-smartphone"
+                                ></use></svg
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <!--------------------кнопки-->
+    <main>
+      <section class="section filter">
+        <div class="container portfolio-btns__container">
+          <ul class="btn__list list">
+            <li class="btn__item"><button type="button" class="buttons">Все</button></li>
+            <li class="btn__item"><button type="button" class="buttons">Веб-сайты</button></li>
+            <li class="btn__item"><button type="button" class="buttons">Приложения</button></li>
+            <li class="btn__item"><button type="button" class="buttons">Дизайн</button></li>
+            <li class="btn__item"><button type="button" class="buttons">Маркетинг</button></li>
+          </ul>
+        </div>
+      <!---------------------------------FILTER-->
+        <div class="container portfolio__container">
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img
+                src="./images-portfolio/img-7.jpg"
+                alt="магазин техники"
+                width="370"
+              />
+              <div class="overlay">
+                <p>Технокряк это современная площадка
+                распространения коронавируса. 
+                Компании используют эту платформу для 
+                цифрового шпионажа и атак на
+                защищённые сервера конкурентов.</p>
+              </div>
+            </div> 
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Технокряк</h3>
+                <p>Веб-сайт</p>
+              </div>  
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img src="./images-portfolio/img-8.jpg" alt="NBA" width="370" />
+                <div class="overlay">
+                  <p>Андрей спасибо Вам)<br>Oчень помогаете)</p>
+                </div>
+              </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Постер New Orlean vs Golden Star</h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img
+                src="./images-portfolio/img-9.jpg"
+                alt="тарелка с рыбой"
+                width="370"
+              />
+              <div class="overlay">
+                <p> Как же хочется побыстрее сдать все домашки</p>
+              </div>
+            </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Ресторан Seafood</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img
+                src="./images-portfolio/img-10.jpg"
+                alt="наушники"
+                width="370"
+              /> <div class="overlay">
+                    <p>А еще понимать полностью как я эти домашки сделала</p>
+              </div>
+            </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Проект Prime</h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal"><img
+                src="./images-portfolio/img-11.jpg"
+                alt="peper box"
+                width="370"
+              /> <div class="overlay">
+                <p>Чтоб на зимних каникулах сесть, и создать какой-нибудь лендинг</p>
+              </div>
+            </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Проект Boxes</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+              <img
+                src="./images-portfolio/img-12.jpg"
+                alt="wallpapers travel"
+                width="370"
+              /> <div class="overlay">
+                <p>А еще лучше этот лендинг продать</p>
+              </div>
+            </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Inspiration has no Borders</h3>
+                <p>Веб-сайт</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img
+                src="./images-portfolio/img-13.jpg"
+                alt="magazine"
+                width="370"
+              /> <div class="overlay">
+                <p>Ведь деньги, это всегда<br> ОЧЕНЬ ПРИЯТНО!!!</p>
+              </div>
+            </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Издание Limited Edition</h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="filter-item">
+              <div class="filter-modal">
+                <img src="./images-portfolio/img-14.jpg" alt="lab" width="370" />
+                <div class="overlay">
+                  <p>Сложно конечно делать все карточки фильтра было делать по отдельности)
+                    Поскольку у я так и не разобралась как поставить курсор на несколько строк сразу(
+                  </p>
+                </div>
+              </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Проект LAB</h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="filter-item"><a>
+              <div class="filter-modal">
+                <img src="./images-portfolio/img-15.jpg" alt="370" width="370" />
+                <div class="overlay">
+                  <p>За то хорошо попрактиковалась с разметкой</p>
+                </div>
+              </div>
+              <div class="filter-wrap">
+                <h3 class="title title--dark-color">Growing Business</h3>
+                <p>Приложение</p></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- подвал-->
+      <footer class="footer">
+            <div class="container footer-container">
+                <div>
+                    <a href="/" class="footer__logo"
+                        ><span class="accent">Web</span><span class="title--light-color">Studio</span></a
+                    >
+                    <address>
+                        <p class="footer__address">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </p>
+                        <a href="mailto:info@example.com" class="footer__mail"
+                            >info@example.com</a
+                        >
+                        <a href="tel:+380991111111" class="footer__phone"
+                            >+38 099 111 11 11</a
+                        >
+                    </address>
+                </div>
+                <div class="join">
+                    <p class="join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-social__list footer-social list">
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <svg
+                                    class="footer-social__icon"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images-studio/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <svg
+                                    class="footer-social__icon"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images-studio/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <svg
+                                    class="footer-social__icon"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images-studio/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <svg
+                                    class="footer-social__icon"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images-studio/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <p class="subscribe__title">Подпишитесь на рассылку</p>
+                    <form class="subscribe__form">
+                        <label class="subscribe-label">
+                            <input
+                                type="mail"
+                                name="mail"
+                                class="subscribe__input"
+                                placeholder="E-mail"
+                                required
+                            />
+                        </label>
+                        <button class="submit" type="submit">
+                            Подписаться<svg
+                                class="tg-icon"
+                                width="24"
+                                height="24"
+                            >
+                                <use
+                                    href="./symbol-defs.svg#icon-telegram"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+  </body>
+  </body>
+</html>

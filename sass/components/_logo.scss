@@ -1,0 +1,23 @@
+.logo {
+    color: var(--second-accent-color);
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-right: 93px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .accent {
+        color: var(--accent-color);
+    }
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+// .logo:hover,
+// .logo:focus {
+//     color: var(--accent-color);
+// }

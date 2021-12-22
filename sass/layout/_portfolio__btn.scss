@@ -1,3 +1,6 @@
+.portfolio-btns__container {
+    padding-bottom: 0;
+}
 .buttons {
     color: var(--title-text-color);
     background-color: var(--filter-background);
@@ -22,13 +25,25 @@
 }
 .btn__list {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width:768px) {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+    display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    }
 }
 .btn__item {
-    margin-right: 8px;
-    &:last-child {
-    margin-right: 0px;
+    margin-bottom: 15px;
+    //  @media screen and (min-width:1200px) {
+        margin-right: 8px;
+        &:last-child {
+        margin-right: 0px;
         }
 }
+    
 

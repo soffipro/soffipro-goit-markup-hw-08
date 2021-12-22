@@ -1,13 +1,13 @@
-.works__title,
+// .works__title,
 .team__title,
 .clients__title {
-    margin-bottom: 50px;
-    
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @include font; 
     text-align: center;
+    margin-bottom: 30px;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.2;
+    // letter-spacing: 0.03em;
 }
 
 .section .title {

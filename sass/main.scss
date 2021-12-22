@@ -4,7 +4,9 @@
 @import './utills/reset';
 @import './utills/utills';
 @import './utills/placeholders';
+
 @import './base/section';
+@import './base/container';
 
 @import './layout/header';
 @import './layout/hero';
@@ -20,7 +22,7 @@
 
 @import './components/logo';
 @import './components/hidden';
-@import './components/container';
+
 @import './components/modal';
 @import './components/form';
 @import './components/order-btn';

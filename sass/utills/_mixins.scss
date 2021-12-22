@@ -1,31 +1,39 @@
-@mixin mq ($range) {
-    $mobile:480px;
-    $tablet:768px;
-    $desctop:1200px;
-
-    @if $range == mobile-only {
-        @media (max-width: #{$tablet - 0.02}) {
-            @content;
-        }
-    } @else if $range == mobile {
-        @media (min-width: $mobile) {
-            @content; 
-        }
-    } @else if $range == tablet-only {
-        @media (min-width: $tablet) and (max-width: #{$desctop -0.02}) {
-            @content;
-        }  
-    } @else if $range == tablet {
-        @media (min-width: $tablet) {
-            @content; 
-        }
-    } @else if $range == desctop {
-        @media (min-width: $desctop) {
-            @content; 
-        }
-    } @else if $range == not-desctop {
-        @media (max-width: #{$desctop - 0.02}) {
-            @content; 
-        }
-    } 
+@mixin font($fw:700, $fz:14px, $lh:1.2, $ls:0.03em){
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
 }
+
+
+// @mixin mq ($range) {
+//     $mobile:480px;
+//     $tablet:768px;
+//     $desctop:1200px;
+
+//     @if $range == mobile-only {
+//         @media (max-width: #{$tablet - 0.02}) {
+//             @content;
+//         }
+//     } @else if $range == mobile {
+//         @media (min-width: $mobile) {
+//             @content; 
+//         }
+//     } @else if $range == tablet-only {
+//         @media (min-width: $tablet) and (max-width: #{$desctop -0.02}) {
+//             @content;
+//         }  
+//     } @else if $range == tablet {
+//         @media (min-width: $tablet) {
+//             @content; 
+//         }
+//     } @else if $range == desctop {
+//         @media (min-width: $desctop) {
+//             @content; 
+//         }
+//     } @else if $range == not-desctop {
+//         @media (max-width: #{$desctop - 0.02}) {
+//             @content; 
+//         }
+//     } 
+// }

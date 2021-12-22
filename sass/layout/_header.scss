@@ -1,11 +1,12 @@
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
+
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 2px solid #ECECEC;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
 }
 .logo {
     font-family: Raleway, cursive;
@@ -85,10 +86,8 @@
     margin-left: 50px;
     display: flex;
     }
-    
-}
-.auth-nav__mail,
-.auth-nav__phone {
+    &__mail,
+    &__phone {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
@@ -104,14 +103,15 @@
     &:hover {
     color: var(--accent-color);
     }
-}
-
-.auth-nav__item {
+    &__item {
     margin-right: 30px;
     &:last-child {
     margin-right: 0;
     }
-}
-.auth-nav__icon {
+    }
+    &__icon {
     margin-right: 10px;
+    }
+    }
 }
+

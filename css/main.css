@@ -1238,20 +1238,27 @@ img {
   color: var(--white-color);
 }
 
-@media screen and (max-hight: 768px) {
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+}
+
+@media screen and (min-widht: 768px) {
   .modal-menu {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100vh;
-    height: 100vh;
-    padding: 48px 40px;
+    display: none;
   }
 }
 
-@media screen and (min-hight: 768px) {
+@media screen and (min-widht: 1200px) {
   .modal-menu {
     display: none;
   }
@@ -1263,7 +1270,10 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin-bottom: 300px;
+}
+
+.modal-menu__item {
+  margin-bottom: 32px;
 }
 
 .modal-menu__contacts {
@@ -1272,24 +1282,32 @@ img {
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 64px;
+}
+
+.modal-menu__contacts-item {
+  padding-bottom: 32px;
+}
+
+.modal-menu__contacts:last-child {
+  margin-bottom: 0;
 }
 
 .modal-menu__contacts-link {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
 
-.modal-menu__contacts.tel {
+.modal-menu__contacts .tel {
   font-size: 34px;
   color: var(--accent-color);
 }
 
-.modal-menu__link--current {
-  color: var(--accent-color);
+.modal-menu__contacts:last-child {
+  margin-bottom: 0;
 }
 
-.modal-menu__item,
-.modal-menu__contacts-item {
-  padding-bottom: 32px;
+.modal-menu__link--current {
+  color: var(--accent-color);
 }
 
 .socials {
@@ -1308,5 +1326,9 @@ img {
 
 .socials__item {
   margin-right: 20px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */

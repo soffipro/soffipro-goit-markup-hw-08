@@ -6,22 +6,7 @@
 }
 .footer {
     background-color: var(--hero-background-color);
-    .footer__logo {
-    font-family: Raleway, cursive;
-    font-size: 26px;
-    line-height: 1.2;   
-    margin-bottom: 20px;
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-        }
-    }
+    
 }
 .footer__address,
 .footer__mail,
@@ -50,6 +35,23 @@
 .footer__mail {
     margin-bottom: 9px;
 }
+.footer__logo {
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.2;   
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+        }
+    }
+
 
 
 

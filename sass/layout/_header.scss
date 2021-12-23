@@ -1,9 +1,10 @@
 
-
 .header-container {
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
     @media screen and (min-width: 768px) {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -61,15 +62,20 @@
 }
 .site-nav__link,
 .auth-nav {
-    color: var(--title-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--title-text-color);
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width1200px) {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
 }
 .auth-nav__mail,
 .auth-nav__phone {
@@ -83,24 +89,58 @@
 // /* ------------AUTH-NAV----------------- */
 .auth-nav {
     display: none;
+    margin-left: auto;
     @media screen and (min-width:768px) {
         display: block;
     }
     @media screen and (min-width:1200px) {
         display: flex;
-        margin-left: auto;
         align-items: center;
     }
 }
 .auth-nav__item {
         display: flex;
         margin-left: 50px;
-        
 }
-
-
 .auth-nav__icon {
-    margin-right: 10px;
+    margin-right: 8px;
+    @media screen and (min-width:1200px) {
+        margin-right: 10px;
+    }
+}
+.icon-mail {
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width:1200px) {
+    width: 16px;
+    height: 12px;
+    }
+}
+.icon-phone {
+    width: 10px;
+    height: 14px;
+    @media screen and (min-width:1200px) {
+    height: 16px;
+    }
+}
+.menu-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-left: auto;
+    display: block;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
+}
+.menu-btn-icon {
+    display: block;
+}
+.icon-close {
+    display: none;
 }
 .site-nav__link-current {
     color: var(--accent-color);

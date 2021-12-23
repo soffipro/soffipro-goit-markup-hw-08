@@ -1,0 +1,65 @@
+.modal-menu {
+    @media screen and (max-hight:768px) {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vh;
+    height: 100vh;
+    padding: 48px 40px;
+    }
+    
+    @media screen and (min-hight:768px) {
+        display: none;
+    }
+
+}
+.modal-menu__list {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    margin-bottom: 300px;
+}
+.modal-menu__contacts {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    &-link {
+        color: var(--accent-color);
+    }
+    &.tel {
+        font-size: 34px;
+        color: var(--accent-color);
+    }
+}
+.modal-menu__link {
+    &--current {
+        color: var(--accent-color);
+    }
+}
+.modal-menu__item,
+.modal-menu__contacts-item {
+    padding-bottom: 32px;
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-style: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    &__link {
+        color: currentColor;
+    }
+
+}
+.socials__item {
+    margin-right: 20px;
+    
+}

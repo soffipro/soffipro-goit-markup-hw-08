@@ -1,7 +1,8 @@
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 .footer {
     background-color: var(--hero-background-color);
@@ -22,7 +23,6 @@
         }
     }
 }
-
 .footer__address,
 .footer__mail,
 .footer__phone {
@@ -46,7 +46,6 @@
         color: var(--accent-color);
     }
 }
-
 .footer__address,
 .footer__mail {
     margin-bottom: 9px;

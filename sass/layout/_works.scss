@@ -1,8 +1,13 @@
-// do 1199px "visually hidden"
-.works {
+.works.visually-hidden {
+    @media screen and (max-width:1199px) {
+        visibility: hidden; 
+        width: 0;
+        height: 0;
+    }
+}
+.works-container {
     padding-top: 0px;
 }
-
 .works__list {
     display: flex;
     justify-content: space-between;

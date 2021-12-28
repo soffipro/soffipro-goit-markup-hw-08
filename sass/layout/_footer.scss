@@ -1,12 +1,16 @@
-.footer-container {
-    @media screen and (min-width:1200px) {
-        display: flex;
-        align-items: center;
-    }
-}
 .footer {
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--hero-background-color);
-    
+}
+.footer-container {
+    @media screen and (min-widht: 768px) {
+        display: flex;
+
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 .footer__address,
 .footer__mail,
@@ -38,20 +42,42 @@
 .footer__logo {
     font-family: Raleway, cursive;
     font-size: 26px;
-    line-height: 1.2;   
+    line-height: 1.2;
     margin-bottom: 20px;
-    display: flex;
-    text-align: center;
+    // display: flex;
+    // text-align: center;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    color: var(--accent-color);
-        }
+        color: var(--accent-color);
     }
-
-
-
+}
+.logo-wrap {
+    text-align: center;
+    outline: solid 3px orange;
+    padding-bottom: 60px;
+    @media screen and (min-widht: 768px) {
+        text-align: start;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+.tablet-wrap {
+    outline: 7px solid red;
+    margin-bottom: 60px;
+    display: block;
+    @media screen and (min-widht: 768px) {
+        display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-widht: 1200px) {
+        display: flex;
+    }
+}
 

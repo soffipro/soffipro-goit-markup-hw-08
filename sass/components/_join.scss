@@ -1,6 +1,10 @@
 .join {
-    margin-left: 70px;
-    
+    outline: 3px solid green;
+    text-align: center;
+    // justify-content: center;
+    @media screen and (min-widht:1200px) {
+        margin-left: 70px;
+    }
 }
 .join__title {
     color: var(--white-color);
@@ -9,10 +13,10 @@
     line-height: 1.1;
 }
 .footer-social__list {
-    width: 205px;
+    // width: 205px; lg
     display: flex;
+    justify-content: center;
     margin-top: 20px;
-    padding: 0px;
 }
 .footer-social__link {
     width: 44px;

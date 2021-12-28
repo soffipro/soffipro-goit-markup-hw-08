@@ -19,9 +19,10 @@
 
 .section .title {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.1;
+    @include font(700,14px, 1.1);
 }
 .title--dark-color {
     color: var(--title-text-color);

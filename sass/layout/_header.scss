@@ -5,12 +5,12 @@
     border-bottom: 1px solid #ECECEC;
     display: flex;
     align-items: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         padding-top: 25px;
         padding-bottom: 25px;
         display: flex;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
         padding-top: 25px;
         padding-bottom: 25px;
         display: flex;
@@ -26,12 +26,12 @@
     transition-duration: 250ms;
     padding-left: 15px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         font-size: 24px;
         line-height: 1.1;
         margin-right: 88px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
     margin-right: 93px;
     font-size: 26px;
     }
@@ -53,18 +53,19 @@
     }
 }
 .site-nav__item {
-    // @media screen and (min-width:768px) {
     margin-left: 50px;
-    // }
+    
+ }
     // }
     // @media screen and (min-width:1200px) {
     
-}
+
 .site-nav__link,
 .auth-nav {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.1;
+    letter-spacing: 00.02em;
     color: var(--title-text-color);
     text-decoration: none;
     transition-property: color;
@@ -85,7 +86,15 @@
     align-items: center;
     fill: currentColor;
     transition-property: color;
+    
 }  
+.auth-nav__mail {
+    @media screen and (min-width:768px)and (max-width:1200px) {
+        margin-bottom: 10px;
+    }
+}
+
+
 // /* ------------AUTH-NAV----------------- */
 .auth-nav {
     display: none;
@@ -129,6 +138,7 @@
     padding: 0;
     margin-left: auto;
     display: block;
+    z-index: 10;
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -142,13 +152,19 @@
 .icon-close {
     display: none;
 }
+
+.menu-btn.is-open .icon-close {
+    display: block;
+}
+.menu-btn.is-open .icon-open {
+    display: none;
+} 
 .site-nav__link-current {
     color: var(--accent-color);
     position: relative;
     &::after {
         position: absolute;
     content: "";
-    border-color: var(--accent-color);
     background-color: var(--accent-color);
     display: block;
     width: 100%;
@@ -156,6 +172,11 @@
     bottom: -32px;
     border-radius: 2px; 
     }
+    // @media screen and (min-widht:768px) {
+    //     .site-nav__link-current::after {
+    //     bottom: -40px;
+    //     }
+    // }
 }
 .site-nav__link:hover,
 .site-nav__link:focus

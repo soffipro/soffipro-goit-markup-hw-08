@@ -60,7 +60,7 @@
                         >
                     </li>
                 </ul>
-                <button class="menu-btn" type="button">
+                <button class="menu-btn" type="button" data-menu-button aria-expanded="false">
                     <svg class="menu-btn-icon" 
                             width="40"
                             height="40">
@@ -68,12 +68,12 @@
                         <use class="icon-close" href="./images-studio/icons.svg#menu-close-icon"></use>
                     </svg>
                 </button>
-                <div class="modal-menu">
+                <div class="modal-menu" data-menu>
                 
                         <ul class="modal-menu__list list">
-                            <li class="modal-menu__item "><a class="modal-menu__link modal-menu__link--current href="./index.html">Студия</a></li>
-                            <li class="modal-menu__item"><a class="modal-menu__link href="./portfolio.html">Портфолио</a></li>
-                            <li class="modal-menu__item"><a class="modal-menu__link href="">Контакты</a></li>
+                            <li class="modal-menu__item "><a class="modal-menu__link modal-menu__link--current"  href="./index.html">Студия</a></li>
+                            <li class="modal-menu__item"><a class="modal-menu__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="modal-menu__item"><a class="modal-menu__link" href="">Контакты</a></li>
                         </ul>
                         <div class="modal-menu__wraper">
                         <ul class="modal-menu__contacts list">
@@ -569,9 +569,10 @@
             </section>
         </main>
         <!--подвал-->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container footer-container">
-                <div>
+                <div class="tablet-wrap">
+                    <div class="logo-wrap">
                     <a href="/" class="footer__logo"
                         ><span class="accent">Web</span><span class="title--light-color">Studio</span></a
                     >
@@ -586,7 +587,8 @@
                             >+38 099 111 11 11</a
                         >
                     </address>
-                </div>
+                    </div>
+                
                 <div class="join">
                     <p class="join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
                     <ul class="footer-social__list footer-social list">
@@ -644,6 +646,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
                 <div class="subscribe">
                     <p class="subscribe__title">Подпишитесь на рассылку</p>
                     <form class="subscribe__form">
@@ -670,7 +673,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <!-- BACKDROP -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">

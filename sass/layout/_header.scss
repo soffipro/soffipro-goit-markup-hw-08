@@ -6,8 +6,8 @@
     display: flex;
     align-items: center;
     @media screen and (min-width:768px) {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         display: flex;
     }
     @media screen and (min-width:1200px) {
@@ -17,36 +17,11 @@
         justify-content: space-between;
     }
 }
-.logo {
-    font-family: Raleway, cursive;
-    font-size: 24px;
-    line-height: 1.2;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    padding-left: 15px;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width:768px) {
-        font-size: 24px;
-        line-height: 1.1;
-        margin-right: 88px;
-    }
-    @media screen and (min-width:1200px) {
-    margin-right: 93px;
-    font-size: 26px;
-    }
-} 
-.accent {
-    color: var(--accent-color);
-}
-
 /* ------------SITE NAV----------------- */
 .site-nav {
     display: none;
-
     @media screen and (min-width:768px) {
     display: flex;
-    
     }
     @media screen and (min-width:1200px) {
         display: flex;
@@ -54,29 +29,19 @@
 }
 .site-nav__item {
     margin-left: 50px;
+    &:first-child {
+        margin-left: 0;
+    }
     
- }
-    // }
-    // @media screen and (min-width:1200px) {
-    
-
+}
 .site-nav__link,
 .auth-nav {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.1;
-    letter-spacing: 00.02em;
+    @include font(500, 14px, 1.1, 0.02em);
     color: var(--title-text-color);
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width1200px) {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    }
 }
 .auth-nav__mail,
 .auth-nav__phone {
@@ -109,13 +74,13 @@
 }
 .auth-nav__item {
         display: flex;
-        margin-left: 50px;
+        @media screen and (min-width:1200px) {
+        margin-right: 10px;
+    }
 }
 .auth-nav__icon {
     margin-right: 8px;
-    @media screen and (min-width:1200px) {
-        margin-right: 10px;
-    }
+    
 }
 .icon-mail {
     width: 14px;
@@ -172,11 +137,6 @@
     bottom: -32px;
     border-radius: 2px; 
     }
-    // @media screen and (min-widht:768px) {
-    //     .site-nav__link-current::after {
-    //     bottom: -40px;
-    //     }
-    // }
 }
 .site-nav__link:hover,
 .site-nav__link:focus

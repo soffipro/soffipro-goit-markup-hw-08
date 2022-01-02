@@ -1,9 +1,7 @@
 .join {
-    outline: 3px solid green;
     text-align: center;
-    // justify-content: center;
-    @media screen and (min-widht:1200px) {
-        margin-left: 70px;
+    @media screen and (min-width:1200px) {
+        text-align: start;
     }
 }
 .join__title {
@@ -11,12 +9,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
+    @media screen and (min-width:1200px) {
+        text-align: start;
+    }
 }
 .footer-social__list {
-    // width: 205px; lg
+    
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
 }
 .footer-social__link {
     width: 44px;
@@ -34,9 +36,7 @@
     &:focus {
         background-color: var(--accent-color);
     }
-    
-    }
-
+}
 .footer-social__item {
     margin-right: 10px;
 }

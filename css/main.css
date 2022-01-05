@@ -553,12 +553,11 @@ img {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  justify-content: space-between;
 }
 
 .clients__item {
   margin-bottom: 30px;
-  margin-right: 30px;
   width: calc(100% / 2 - 30px);
 }
 
@@ -1209,7 +1208,7 @@ img {
 @media screen and (min-width: 768px) {
   .subscribe {
     display: inline-block;
-    margin-left: 166px;
+    margin-left: 180px;
   }
 }
 

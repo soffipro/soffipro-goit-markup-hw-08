@@ -63,7 +63,8 @@
                 <button class="menu-btn" type="button" data-menu-button aria-expanded="false">
                     <svg class="menu-btn-icon" 
                             width="40"
-                            height="40">
+                            height="40"
+                            aria-label="true">
                         <use class="icon-open" href="./images-studio/icons.svg#menu-open-icon"></use>
                         <use class="icon-close" href="./images-studio/icons.svg#menu-close-icon"></use>
                     </svg>
@@ -181,34 +182,58 @@
                             <div class="works__text">
                                 <p>Десктопные приложения</p>
                             </div>
-                            <img
-                                src="./images-studio/box1.jpg"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/works/box-1-lg.jpg 1x,
+                                ./images-studio/works/img-works1@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/works/box-1-lg.jpg"
                                 alt="создание сайтов"
                                 width="370"
                                 height="294"
+                                loading="lazy"
                             />
+                            </picture>
                         </li>
                         <li class="works__cover">
                             <div class="works__text">
                                 <p>Мобильные приложения</p>
                             </div>
-                            <img
-                                src="./images-studio/box2.jpg"
-                                alt="десктоп версия"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/works/box-2-lg.jpg 1x,
+                                ./images-studio/works/img-works2@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/works/box-2-lg.jpg"
+                                alt="создание сайтов"
                                 width="370"
                                 height="294"
+                                loading="lazy"
                             />
+                            </picture>
+                            <!-- <img
+                                src="./images-studio/works/box-2-lg.jpg"
+                                alt="Мобильные приложения"
+                                width="370"
+                                height="294"
+                            /> -->
                         </li>
                         <li class="works__cover">
                             <div class="works__text">
                                 <p>Дизайнерские решения</p>
                             </div>
-                            <img
-                                src="./images-studio/box3.jpg"
-                                alt="мобильная игры"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/works/box-3-lg.jpg 1x,
+                                ./images-studio/works/img-works3@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/works/box-3-lg.jpg"
+                                alt="мобильные игры"
                                 width="370"
                                 height="294"
+                                loading="lazy"
                             />
+                            </picture>
                         </li>
                     </ul>
                 </div>
@@ -219,11 +244,24 @@
                     <h2 class="team__title title--dark-color">Наша команда</h2>
                     <ul class="team-list list">
                         <li class="team-list__card">
-                            <img
-                                src="./images-studio/1.jpg"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/team/team-1-lg.jpg 1x,
+                                ./images-studio/team/team-1-@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-1-md.jpg 1x,
+                                ./images-studio/team/team-1-@2x-md.jpg 2x" media="(min-width:768px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-1-sm.jpg 1x,
+                                ./images-studio/team/team-1-@2x-sm.jpg 2x" media="(max-width:767px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/team/team-1-sm.jpg"
                                 alt="мужчина в очках"
-                                width="270"
+                                width="450"
+                                height="460"
+                                loading="lazy"
                             />
+                            </picture>
                             <div class="team-list__item-wrap">
                                 <h3 class="team-list__item">Игорь Демьяненко</h3>
                                 <p class="team-list__description">Product Designer</p>
@@ -284,11 +322,24 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img
-                                src="./images-studio/2.jpg"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/team/team-2-lg.jpg 1x,
+                                ./images-studio/team/team-2-@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-2-md.jpg 1x,
+                                ./images-studio/team/team-2-@2x-md.jpg 2x" media="(min-width:768px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-2-sm.jpg 1x,
+                                ./images-studio/team/team-2-@2x-sm.jpg 2x" media="(max-width:767px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/team/team-2-sm.jpg"
                                 alt="девушка блондинка"
-                                width="270"
+                                width="450"
+                                height="460"
+                                loading="lazy"
                             />
+                            </picture>
                             <div class="team-list__item-wrap">
                                 <h3 class="team-list__item">Ольга Репина</h3>
                                 <p class="team-list__description">Frontend Developer</p>
@@ -349,11 +400,24 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img
-                                src="./images-studio/3.jpg"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/team/team-3-lg.jpg 1x,
+                                ./images-studio/team/team-3-@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-3-md.jpg 1x,
+                                ./images-studio/team/team-3-@2x-md.jpg 2x" media="(min-width:768px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-3-sm.jpg 1x,
+                                ./images-studio/team/team-3-@2x-sm.jpg 2x" media="(max-width:767px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/team/team-3-sm.jpg"
                                 alt="парень в рубашке"
-                                width="270"
+                                width="450"
+                                height="460"
+                                loading="lazy"
                             />
+                            </picture>
                             <div class="team-list__item-wrap">
                                 <h3 class="team-list__item">Николай Тарасов</h3>
                                 <p class="team-list__description">Marketing</p>
@@ -414,11 +478,24 @@
                             </div>
                         </li>
                         <li class="team-list__card">
-                            <img
-                                src="./images-studio/4.jpg"
+                            <picture>
+                                <source srcset="
+                                ./images-studio/team/team-4-lg.jpg 1x,
+                                ./images-studio/team/team-4-@2x-lg.jpg 2x" media="(min-width:1200px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-4-md.jpg 1x,
+                                ./images-studio/team/team-4-@2x-md.jpg 2x" media="(min-width:768px)" type="image/jpg" />
+                                <source srcset="
+                                ./images-studio/team/team-4-sm.jpg 1x,
+                                ./images-studio/team/team-4-@2x-sm.jpg 2x" media="(max-width:767px)" type="image/jpg" />
+                                <img
+                                src="./images-studio/team/team-4-sm.jpg"
                                 alt="мужчина в очках"
-                                width="270"
+                                width="450"
+                                height="460"
+                                loading="lazy"
                             />
+                            </picture>
                             <div class="team-list__item-wrap">
                                 <h3 class="team-list__item">Михаил Ермаков</h3>
                                 <p class="team-list__description">UI Designer</p>

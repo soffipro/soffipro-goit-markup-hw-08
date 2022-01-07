@@ -1,8 +1,14 @@
+.clients__title {
+    @include font(700, 28px);
+}
 .clients__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        // margin-right: -30px;
+        @media screen and (min-width: 1200px){
+            margin-left: -30px;
+        }
+
 }
 .clients__item {
     margin-bottom: 30px;
@@ -12,6 +18,8 @@
         }
     @media screen and (min-width: 1200px) {
         width: calc(100% / 6 - 30px);
+        margin-left: 30px;
+        margin-bottom: 0;
     }
 }
 .clients__link {

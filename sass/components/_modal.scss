@@ -4,7 +4,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    // max-width: 528px;
     // min-width: 50%;
     min-height: 581px;
 
@@ -13,6 +12,10 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
 }
 .btn-close {
     position: absolute;

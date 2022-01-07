@@ -12,7 +12,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    // }
+    z-index: 1;
     @media screen and (min-widht:768px) {
         display: none;
     }
@@ -32,12 +32,9 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    
 }
 .modal-menu__item {
-    
     margin-bottom: 32px;
-
 }
 .modal-menu__contacts {
     font-weight: 500;

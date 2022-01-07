@@ -20,7 +20,7 @@ img {
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;
-        margin-bottom: 0;
+        margin-bottom: -30px;
     }
 }
 .team-list__card {
@@ -35,15 +35,15 @@ img {
     @media screen and (min-width: 768px) {
         width: 354px;
         margin-left: 30px;
-        &:last-child(:nth-child(2)) {
-        margin-right: 0;
-        }
+         margin-right: 0px;
+        // &:last-child(:nth-child(2)) {
+        // margin-right: 0;
+        // }
     }
     @media screen and (min-width: 1200px) {
-        margin-right: 30px;
-        &:last-child {
-        margin-right: 0px;
-        }
+        // margin-right: 30px;
+        // &:last-child {
+        // }
     }
 }
 .team-list__item-wrap {

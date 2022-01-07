@@ -1,11 +1,8 @@
 .form-conect {
-    width: 448px;
     min-height: 342px;
     transition: border 250ms ;
 }
 .form-title {
-    width: 448px;
-    height: 23px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -70,12 +67,12 @@
     fill: var(--second-accent-color);
 }
 .checktext {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.1;
     color: var(--primary-text-color);
     display: flex;
     align-items: center;
-    margin-left: 8px;
+    
     margin-top: 10px;
     margin-bottom: 30px;
         span {
@@ -87,6 +84,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-left: 8px;
     }
 }
 .modal-checkbox:checked + .checktext svg{
@@ -107,6 +109,7 @@
 .agree-link {
     color: var(--accent-color);
     text-decoration: underline;
+    margin-left: 5px;
 }
 .button-send {
     display: flex; 

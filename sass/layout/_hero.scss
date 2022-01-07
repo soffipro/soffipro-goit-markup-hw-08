@@ -1,13 +1,16 @@
 .hero {
     display: flex;
     text-align: center;
-    border-top: 1px solid #ECECEC;
     @media screen and (min-width: 1200px) {
     }
 }
 .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+        padding-bottom: 118px;
+    @media screen and(min-width:1199px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 .overlay-hero {
     background-color: var(--hero-background-color);

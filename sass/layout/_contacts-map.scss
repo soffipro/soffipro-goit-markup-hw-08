@@ -1,0 +1,17 @@
+// .section-map {
+//   // background-color: var(--accent-color);
+
+// }
+.container-map{
+  position: relative;
+}
+
+.map {
+  // position: absolute;
+  position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+    height: 100vh;
+}
